@@ -1,14 +1,13 @@
-package ru.mirea.practika7_1;
+package ru.mirea.practika7;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
-public class DoubleList {
+public class Dequeue {
+
     public static void main(String[] args){
         int n = 10;
-        LinkedList<Integer> player1 = new LinkedList<>();
-        LinkedList<Integer> player2 = new LinkedList<>();
+        Deque<Integer> player1 = new LinkedList<>();
+        Deque<Integer> player2 = new LinkedList<>();
         Scanner in = new Scanner(System.in);
         int karta;
         for (int i = 0; i < n / 2; ++i) {

@@ -1,4 +1,4 @@
-package ru.mirea.practika7_1;
+package ru.mirea.practika7;
 
 import java.util.Scanner;
 import java.util.Stack;
