@@ -10,11 +10,14 @@ public class DoubleList {
         LinkedList<Integer> player2 = new LinkedList<>();
         Scanner in = new Scanner(System.in);
         int karta;
+
+        System.out.println("Enter the cards of the first player: ");
         for (int i = 0; i < n / 2; ++i) {
             karta = in.nextInt();
             player1.add(karta);
         }
 
+        System.out.println("Enter the cards of the second player: ");
         for (int i = 0; i < n / 2; ++i) {
             karta = in.nextInt();
             player2.add(karta);
@@ -43,6 +46,7 @@ public class DoubleList {
             moves++;
         }
 
+        System.out.println("Winner: ");
         if (moves == 106) System.out.println("botva");
         else if (player1.isEmpty()) System.out.println("Second " + moves);
         else if (player2.isEmpty()) System.out.println("First " + moves);
